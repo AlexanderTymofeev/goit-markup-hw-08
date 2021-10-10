@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  text-decoration: none;
+  color: var(--third-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+}
+
+.footer__leftside {
+  display: flex;
+  width: calc((100% - 30px) / 2);
+}
+
+.footer__rightside {
+  width: calc((100% -30px) / 2);
+  position: relative;
+  vertical-align: baseline;
+}
+
+.footer__address {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--third-text-color);
+}
+
+.footer__contacts {
+  list-style: none;
+}
+
+.mail__phone {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-links-color);
+}
+
+.footer__wrapper {
+  display: flex;
+  vertical-align: baseline;
+}
+
+.join__us {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-background-color);
+
+  margin-bottom: 20px;
+}
+
+.footer__email--input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid #ffffff4d;
+  background-color: transparent;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__button--send {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 62px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: var(--third-text-color);
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+.button__send {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-28px) translateY(13px);
+}
+
+.footer__block--width {
+  width: calc((100% - 30px) / 2);
+}

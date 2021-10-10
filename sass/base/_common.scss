@@ -1,0 +1,51 @@
+/* ==========COMMON========== */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --third-text-color: #ffffff;
+  --footer-links-color: #ffffff99;
+  --accent-color: #2196f3;
+
+  --primary-background-color: #ffffff;
+  --header-background-color: #ffffff;
+  --ourteam-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --hero-background-color: #2f303a;
+  --white-background-color: #ffffff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.block {
+  display: block;
+}
+
+.inline__block {
+  display: inline-block;
+}
+
+img {
+  display: block;
+}
+
+.images {
+  display: block;
+}
