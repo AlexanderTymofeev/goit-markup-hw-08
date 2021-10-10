@@ -154,7 +154,7 @@ img {
 
 .modal__form--button {
   display: block;
-  margin: 30px auto 40px;
+  margin: 54px auto 0px;
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
@@ -206,8 +206,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
   background-color: var(--primary-background-color);
@@ -221,7 +220,6 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 40px;
   margin-bottom: 12px;
   color: var(--secondary-text-color);
 }
@@ -236,6 +234,7 @@ img {
 }
 
 .modal__name--area {
+  display: block;
   position: relative;
 }
 
@@ -247,6 +246,7 @@ img {
 }
 
 .modal__phone--area {
+  display: block;
   position: relative;
 }
 
@@ -258,6 +258,7 @@ img {
 }
 
 .modal__email--area {
+  display: block;
   position: relative;
 }
 
@@ -338,13 +339,8 @@ img {
 }
 
 .sociallink__list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
+  display: inline-flex;
   align-items: center;
-  width: 206px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .sociallink__link {
@@ -669,6 +665,7 @@ span {
   background-image: linear-gradient(#2f303a66, #2f303a66), url(../../images/heroimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1600px;
 }
 
 h1 {
@@ -875,13 +872,13 @@ h1 {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   color: var(--third-text-color);
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .example__links:hover .example__cover--text,
 .example__links:focus .example__cover--text {
-  opacity: 1;
+  transform: translateY(0);
 }
 
 .portfolio__image {
@@ -996,6 +993,7 @@ h1 {
 }
 
 .staff__signature {
+  text-align: center;
   background-color: var(--white-background-color);
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1048,9 +1046,8 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
-  height: 70px;
-  padding: 27px 82px;
+  width: 100%;
+  padding: 27px;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -1065,9 +1062,8 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
-  height: 70px;
-  padding: 27px 85px;
+  width: 100%;
+  padding: 27px;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -1082,9 +1078,8 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
-  height: 70px;
-  padding: 27px 90px;
+  width: 100%;
+  padding: 27px;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -1103,24 +1098,19 @@ h1 {
   color: var(--secondary-text-color);
 }
 
-.clients {
-  width: 170px;
-  height: 92px;
-}
-
 .clients:not(:last-child) {
   margin-right: 30px;
 }
 
 .clients__link {
   display: block;
-  width: 170px;
-  height: 92px;
+  width: 100%;
 }
 
 .clients__list {
   list-style: none;
   display: flex;
+  width: calc((100% - 180px) / 6);
 }
 
 .clients__logo {

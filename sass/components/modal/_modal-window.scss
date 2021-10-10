@@ -3,9 +3,7 @@
   top: 50%;
   left: 50%;
 
-  padding-left: 40px;
-  padding-right: 40px;
-
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
 
@@ -23,7 +21,6 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  padding-top: 40px;
   margin-bottom: 12px;
 
   color: var(--secondary-text-color);
@@ -41,6 +38,7 @@
 }
 
 .modal__name--area {
+  display: block;
   position: relative;
 }
 
@@ -54,6 +52,7 @@
 }
 
 .modal__phone--area {
+  display: block;
   position: relative;
 }
 
@@ -66,6 +65,7 @@
 }
 
 .modal__email--area {
+  display: block;
   position: relative;
 }
 

@@ -10,9 +10,6 @@
 }
 
 .clients {
-  width: 170px;
-  height: 92px;
-
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -20,13 +17,13 @@
 
 .clients__link {
   display: block;
-  width: 170px;
-  height: 92px;
+  width: 100%;
 }
 
 .clients__list {
   list-style: none;
   display: flex;
+  width: calc((100% - 180px) / 6);
 }
 
 .clients__logo {

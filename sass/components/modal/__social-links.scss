@@ -1,11 +1,6 @@
 .sociallink__list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
+  display: inline-flex;
   align-items: center;
-  width: 206px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .sociallink__link {
