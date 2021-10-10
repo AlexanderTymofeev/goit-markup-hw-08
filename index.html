@@ -112,12 +112,17 @@
           <h2 class="rubrics">Чем мы занимаемся</h2>
           <ul class="rubrics__examples">
             <li class="rubrics__image">
-              <img
-                src="./images/wwd1.jpg"
-                alt="Человек печатает на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/wwd1.jpg" media="(min-width: 1200px)" />
+                <source srcset="./images/about/about-img-tablet-1.jpg" media="(min-width: 768px)" />
+                <img
+                  src="./images/wwd1.jpg"
+                  alt="Человек печатает на клавиатуре"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="rubrics__image__cover--desctop">Десктопные приложения</div>
             </li>
             <li class="rubrics__image">
