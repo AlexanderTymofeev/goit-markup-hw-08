@@ -6,57 +6,61 @@
 
 .footer__container {
   display: block;
-
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: block;
+    margin-right: 165px;
+    margin-left: 76px;
   }
-
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
 .footer__wrapper {
   display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    vertical-align: baseline;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    vertical-align: baseline;
-  }
 }
 
 .footer__leftside {
-  display: block;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    width: calc((100% - 330px) / 2);
-  }
+  display: flex;
 
   @media screen and (min-width: 1200px) {
     display: flex;
     width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      // width: calc((100% - 330px) / 2);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: block;
   }
 }
-
 .footer__rightside {
   display: block;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    margin-left: 166px;
+  }
   @media screen and (min-width: 1200px) {
-    width: 450px;
+    // width: 450px;
     position: relative;
     vertical-align: middle;
-  }
-
-  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    margin-left: 0px;
     width: calc((100% - 30px) / 2);
-    position: relative;
-    vertical-align: baseline;
   }
 }
 
@@ -150,11 +154,13 @@
 }
 
 .footer__contacts {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 1200px) {
     list-style: none;
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    list-style: none;
+  }
+  @media screen and (max-width: 767px) {
     list-style: none;
   }
 }
@@ -192,12 +198,26 @@
     margin-bottom: 20px;
   }
 
+  @media screen and (min-width: 768px) {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: var(--primary-background-color);
+
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 1200px) {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: left;
 
     color: var(--primary-background-color);
 
@@ -221,7 +241,24 @@
     border-radius: 4px;
   }
 
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-bottom: 20px;
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    // margin-right: 140px;
+
+    background-color: #2f303a;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
   @media screen and (min-width: 1200px) {
+    display: flex;
     width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -237,6 +274,35 @@
 
 .footer__button--send {
   @media screen and (max-width: 767px) {
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+
+    position: relative;
+
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    margin: 0 auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+
+    border: none;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 200px;
     height: 50px;
     color: #ffffff;
@@ -295,6 +361,13 @@
 
 .button__send {
   @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-28px) translateY(13px);
+  }
+
+  @media screen and (min-width: 768px) {
     position: absolute;
     top: 0;
     right: 0;

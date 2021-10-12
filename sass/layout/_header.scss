@@ -69,6 +69,18 @@ span {
   list-style: none;
   display: flex;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+  }
 }
 
 .contacts__link {
@@ -126,11 +138,25 @@ span {
 
 .header__mail:not(:last-child) {
   margin-right: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header__container {
     display: none;
+  }
+}
+
+.header-container {
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
   }
 }
 

@@ -130,6 +130,12 @@
     margin-top: 60px;
     text-align: center;
   }
+  @media screen and (min-width: 768px) {
+    margin-left: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 }
 
 .modal__link {
@@ -207,6 +213,10 @@
   border: none;
   padding: 0;
   line-height: 0;
+}
+
+.mobile__menu__close--btn:hover .mobile__menu__close--icon {
+  fill: var(--accent-color);
 }
 
 .mobile__current--link {
