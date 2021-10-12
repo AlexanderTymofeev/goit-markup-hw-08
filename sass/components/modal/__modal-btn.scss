@@ -16,3 +16,21 @@
     fill: var(--accent-color);
   }
 }
+
+.open-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  margin-top: 10px;
+  margin-right: 15px;
+  // transform: translateX(-10px);
+  // transform: translateY(10px);
+}
+
+.open-menu-btn:hover {
+  fill: var(--accent-color);
+}

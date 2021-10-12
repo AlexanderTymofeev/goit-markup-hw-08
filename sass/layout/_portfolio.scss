@@ -152,3 +152,8 @@
     color: var(--accent-color);
   }
 }
+
+.work__examples {
+  display: flex;
+  flex-direction: column;
+}

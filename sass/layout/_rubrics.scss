@@ -29,15 +29,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 60px) / 2);
-
-    .rubrics__team:nth-child(-n + 2) {
-      margin-bottom: 30px;
-    }
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: nowrap;
     margin-top: -30px;
     margin-left: -30px;
     width: 100%;
@@ -45,9 +41,17 @@
 }
 
 .team__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  width: calc((100% - 120px) / 4);
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 /* .team-item:not(:last-child) {
@@ -66,6 +70,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 768px) {
+    width: 450px;
+  }
 }
 
 .staff__names {
@@ -168,4 +176,8 @@
 .our-work {
   padding-top: 0px;
   background-color: var(--primary-background-color);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

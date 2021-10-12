@@ -53,13 +53,63 @@
           </li>
         </ul>
       </div>
+      <a href="./" class="header__logo header__logo--mobile"><span>Web</span>Studio</a>
+      <button class="open-menu-btn" data-menu-open>
+        <svg class="open-menu-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="mobile__menu" data-menu>
+        <div class="container mobile__menu--container">
+          <button class="mobile__menu__close--btn" data-menu-close>
+            <svg class="mobile__menu__close--icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile__menu--nav">
+            <ul class="mobile__menu--list">
+              <li class="mobile__menu__list--item">
+                <a href="#" class="mobile__menu__list--link mobile__current--link">Студия</a>
+              </li>
+              <li class="mobile__menu__list--item">
+                <a href="#" class="mobile__menu__list--link">Портфолио</a>
+              </li>
+              <li class="mobile__menu__list--item">
+                <a href="#" class="mobile__menu__list--link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul>
+            <li class="menu__contacts--list">
+              <a href="#" class="menu__contacts--link mobile__current--tel">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__contacts--list list">
+              <a href="#" class="menu__contacts--link mobile__current--email">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile__sociallink">
+            <li class="menu__sociallinks--list">
+              <a href="#" class="menu__sociallinks--link">Instagram</a>
+            </li>
+            <li class="menu__sociallinks--list">
+              <a href="#" class="menu__sociallinks--link">Twitter</a>
+            </li>
+            <li class="menu__sociallinks--list">
+              <a href="#" class="menu__sociallinks--link">Facebook</a>
+            </li>
+            <li class="menu__sociallinks--list">
+              <a href="#" class="menu__sociallinks--link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- Main -->
     <main>
       <section class="hero">
         <div class="container">
           <div class="hero__name">
-            <h1>Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
           </div>
         </div>
@@ -139,7 +189,7 @@
               <picture>
                 <source srcset="./images/dem'yanenko.jpg" media="(min-width: 1200px)" />
                 <source srcset="./images/tablet/dem'yanenko.jpg" media="(min-width: 768px)" />
-                <source srcset="./images/mobile/dem'yanenko.jpg" media="(min-width: 480px)" />
+                <source srcset="./images/mobile/dem'yanenko.jpg" media="(max-width: 767px)" />
                 <img class="images" src="#" alt="Продакт дизайнер" width="270" height="260" />
               </picture>
 
@@ -182,7 +232,7 @@
               <picture>
                 <source srcset="./images/repina.jpg" media="(min-width: 1200px)" />
                 <source srcset="./images/tablet/repina.jpg" media="(min-width: 768px)" />
-                <source srcset="./images/mobile/repina.jpg" media="(min-width: 480px)" />
+                <source srcset="./images/mobile/repina.jpg" media="(max-width: 767px)" />
                 <img class="images" src="#" alt="Фрондэнд девелопер" width="270" height="260" />
               </picture>
               <div class="staff__signature">
@@ -224,7 +274,7 @@
               <picture>
                 <source srcset="./images/tarasov.jpg" media="(min-width: 1200px)" />
                 <source srcset="./images/tablet/tarasov.jpg" media="(min-width: 768px)" />
-                <source srcset="./images/mobile/tarasov.jpg" media="(min-width: 480px)" />
+                <source srcset="./images/mobile/tarasov.jpg" media="(max-width: 767px)" />
                 <img class="images" src="#" alt="Маркетолог" width="270" height="260" />
               </picture>
               <div class="staff__signature">
@@ -266,7 +316,7 @@
               <picture>
                 <source srcset="./images/ermakov.jpg" media="(min-width: 1200px)" />
                 <source srcset="./images/tablet/ermakov.jpg" media="(min-width: 768px)" />
-                <source srcset="./images/mobile/ermakov.jpg" media="(min-width: 480px)" />
+                <source srcset="./images/mobile/ermakov.jpg" media="(max-width: 767px)" />
                 <img class="images" src="#" alt="Креативный дизайнер" width="270" height="260" />
               </picture>
               <div class="staff__signature">
@@ -516,9 +566,9 @@
                 <use href="./images/icons.svg#icon-check-blue"></use>
               </svg>
             </span>
-            <span class="modal__agreement">
+            <p class="modal__agreement">
               Соглашаюсь с рассылкой и принимаю <a class="modal__link" href="">Условия договора</a>
-            </span>
+            </p>
           </label>
           <button type="submit" class="modal__form--button">Отправить</button>
         </form>
@@ -526,5 +576,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
